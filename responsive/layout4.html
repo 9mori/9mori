@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .div1 {
+            max-width: 1024px;
+            /* 맥스를 줘야 부드럽게 작아지면서 줄어듦 */
+            margin: 0 auto
+        }
+
+        .row {
+            overflow: hidden;
+            /* 오버플로우 히든을 줘야 부모가 자식크기만큼 늘어남 */
+        }
+
+        .cell {
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .box>img {
+            display: block;
+            width: 100%;
+        }
+
+        .main {
+            margin-top: 30px;
+        }
+
+        .wrap>ul>li {
+            padding: 0 15px;
+            margin-top: 30px;
+        }
+
+        .wrap>ul {
+            margin: 0 -15px;
+        }
+
+
+        .wrap>ul>li {
+            width: 25%;
+        }
+
+        .wrap>ul>li:nth-child(3n + 1) {
+            width: 50%;
+        }
+
+        .wrap>ul {
+            position: relative;
+        }
+
+        .wrap>ul>li:nth-last-child(1),
+        .wrap>ul>li:nth-last-child(2) {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .wrap>ul>li:nth-last-child(2) {
+            left: 25%;
+        }
+
+        @media (max-width:900px) and (min-width:701px) {
+            .wrap>ul>li {
+                width: 33.333333%;
+            }
+
+            .wrap>ul>li:nth-child(3n + 1) {
+                width: 66.666666%;
+            }
+
+            .wrap>ul>li:nth-last-child(1),
+            .wrap>ul>li:nth-last-child(2) {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: auto;
+            }
+
+            .wrap>ul>li:nth-last-child(2) {
+                bottom: 25%;
+            }
+        }
+
+        @media (max-width:700px) {
+            .wrap>ul>li {
+                width: 50%;
+            }
+
+            .wrap>ul>li:nth-child(3n + 1) {
+                width: 100%;
+            }
+
+            .wrap>ul>li:nth-last-child(1),
+            .wrap>ul>li:nth-last-child(2) {
+                position: static;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main box div1">
+        <img src="images/big-978x460.jpg" alt="">
+    </div>
+
+    <div class="wrap div1">
+        <ul class="row">
+            <li class="cell">
+                <div class="box">
+                    <img src="images/middle1-480x480.jpg" alt="">
+                </div>
+            </li>
+            <li class="cell">
+                <div class="box">
+                    <img src="images/small1-230x230.jpg" alt="">
+                </div>
+            </li>
+            <li class="cell">
+                <div class="box">
+                    <img src="images/small2-230x230.jpg" alt="">
+                </div>
+            </li>
+            <li class="cell">
+                <div class="box">
+                    <img src="images/middle2-480x480.jpg" alt="">
+                </div>
+            </li>
+            <li class="cell">
+                <div class="box">
+                    <img src="images/small3-230x230.jpg" alt="">
+                </div>
+            </li>
+            <li class="cell">
+                <div class="box">
+                    <img src="images/small4-230x230.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

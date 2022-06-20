@@ -1,0 +1,495 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+    font-family: 'Titan One', cursive;
+}
+
+a:link,
+a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.div1 {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+span {
+    color: red;
+}
+
+/* 헤더 */
+header {
+    text-align: center;
+    background: linear-gradient(to bottom, #000, #000 60px, #fff 60px, #fff);
+    /* 191px까지 회색으로 왔다가 거기서 다시 검은색으로 쭉. 0%~50% 50%~100% 같은의미*/
+}
+
+header p {
+    color: #fff;
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: 1px;
+}
+
+header ul {
+    margin: 0 auto;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    align-items: center;
+}
+
+header ul li {
+    padding: 38px 35px;
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+
+header ul li:hover {
+    padding: 35px;
+}
+
+/* header ul .links::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #000;
+    display: none;
+}
+
+header ul li:hover .links::after {
+    display: block;
+} */
+
+
+.logo {
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    background-color: red;
+    color: white;
+    margin-right: 380px;
+}
+
+.main {
+    background-color: #000;
+    height: 730px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main p {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main h1 {
+    color: red;
+    font-size: 100px;
+}
+
+.black_bg {
+    background-color: #000;
+    height: 2000px;
+}
+
+.visual_area h1 {
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: 150px 0 100px;
+    font-size: 50px;
+}
+
+.visual_area .div1 {
+    height: 920px;
+    background-color: #fff;
+}
+
+.cola_box {
+    position: relative;
+}
+
+.visual_area .text_wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 120px 0 0 90px;
+
+}
+
+.visual_area .text_wrap>p {
+    font-size: 30px;
+    margin-bottom: 28px;
+}
+
+.visual_area .text_wrap h2 {
+    font-size: 80px;
+    margin-bottom: 75px;
+}
+
+.p2 div {
+    width: 50px;
+    border-bottom: 1px solid;
+    margin-bottom: 30px;
+}
+
+.p2 p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.visual_area .text_wrap p a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: #000;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+
+.tab_content ul li img {
+    position: absolute;
+    right: 20px;
+    top: -30px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+label {
+    position: absolute;
+    cursor: pointer;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background-color: #000;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -200px;
+}
+
+.tab_content label:nth-of-type(1) {
+    left: 35%;
+}
+
+.tab_content label:nth-of-type(3) {
+    left: 65%;
+}
+
+/* .menu {
+    position: absolute;
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -200px;
+    color: #fff;
+} */
+
+.list {
+    display: none;
+}
+
+input[type="radio"]:checked+label {
+    background-color: #fff;
+    color: #000;
+}
+
+input[id="tab01"]:checked~.list01 {
+    display: block;
+}
+
+input[id="tab02"]:checked~.list02 {
+    display: block;
+}
+
+input[id="tab03"]:checked~.list03 {
+    display: block;
+}
+
+.video {
+    position: relative;
+}
+
+.video h1 {
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    font-size: 50px;
+    margin: 300px 0 50px;
+}
+
+.video p {
+    color: #fff;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.slider li {
+    margin: 0 -21px;
+}
+
+
+.bx-controls-direction a {
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 52px;
+    transition: all .3s;
+    text-indent: -9999px;
+    top: 55%;
+    /* 글자를 없앨수없으니 옆으로 밀어버림 */
+}
+
+.bx-controls-direction .bx-prev {
+    background: url(../images/left.png);
+    left: 180px;
+    transition: all .7s;
+}
+
+.bx-controls-direction .bx-prev:hover {
+    background: url(../images/left-r.png);
+    left: 180px;
+}
+
+.bx-controls-direction .bx-next {
+    background: url(../images/right.png);
+    right: 180px;
+    transition: all .7s;
+}
+
+.bx-controls-direction .bx-next:hover {
+    background: url(../images/right-r.png);
+    right: 180px;
+}
+
+.bx-pager {
+    position: absolute;
+    width: 1400px;
+    text-align: center;
+    bottom: -30%;
+}
+
+.bx-pager div {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.bx-pager div a {
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    font-size: 0;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.bx-pager div a.active {
+    background-color: #f00;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+
+.circle h1 {
+    text-align: center;
+    color: #000;
+    font-size: 50px;
+    margin: 150px 0 50px;
+}
+
+.circle .cir {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.circle .cir:hover {
+    background-color: black;
+}
+
+.circle .room {
+    height: 910px;
+    position: relative;
+}
+
+.circle .cir p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+.circle .cle1 {
+    position: absolute;
+    transform: scale(1.3);
+    left: 40px;
+    top: 40px;
+}
+
+.circle .cle2 {
+    position: absolute;
+    left: 400px;
+    top: 200px;
+}
+
+.circle .cle3 {
+    position: absolute;
+    right: 70px;
+    top: 50px;
+    transform: scale(1.4);
+}
+
+.circle .cle4 {
+    position: absolute;
+    bottom: 80px;
+    left: 70px;
+    transform: scale(1.5);
+}
+
+.circle .cle5 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.circle .cle6 {
+    position: absolute;
+    right: 350px;
+    top: 400px;
+    transform: scale(0.8);
+}
+
+.movie h1 {
+    text-align: center;
+    color: #000;
+    font-size: 50px;
+    margin: 150px 0 50px;
+}
+
+.movie ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.movie ul li img {
+    border-radius: 40px;
+}
+
+.movie ul li p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.sns {
+    height: 90px;
+    background-color: #ededed;
+    display: flex;
+}
+
+.sns .nsn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 350px;
+}
+
+.sns .nsn div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.sns .nsn div a {
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.f_gnb {
+    height: 65px;
+    background-color: #000;
+    display: flex;
+}
+
+.f_gnb ul {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.f_gnb ul li a {
+    color: white;
+}
+
+.f_info {
+    height: 340px;
+    background-color: #999999;
+    color: white;
+}
+
+.f_info strong a {
+    color: #fff;
+    display: block;
+    width: 280px;
+    height: 90px;
+    background-color: red;
+    text-align: center;
+    line-height: 90px;
+    font-size: 25px;
+    margin: 60px 0 73px;
+}
+
+.f_info .div1 div {
+    display: flex;
+    justify-content: space-between;
+    line-height: 25px;
+
+}
+
+.f_info p:last-child {
+    text-align: right;
+}

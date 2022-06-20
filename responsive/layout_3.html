@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            margin: 0 auto;
+            width: 1140px;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #ccc;
+        }
+
+        .main {
+            width: 100%;
+            height: 300px;
+            background-color: #968989;
+        }
+
+        section {
+            width: 90%;
+            padding: 5%;
+            background-color: #c2a3a3;
+            overflow: hidden;
+        }
+
+        section>div {
+            float: left;
+            width: 20%;
+            height: 200px;
+            background-color: #000;
+        }
+
+        section>div:nth-of-type(even) {
+            background-color: #fff;
+        }
+
+        footer {
+            width: 100%;
+            height: 200px;
+            background-color: #968989;
+        }
+
+        @media (max-width: 1280px) {
+            #wrap {
+                width: 100%;
+            }
+
+            section>div {
+                width: 25%;
+            }
+
+            section>div:nth-of-type(5n) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section>div {
+                width: 33.3333%;
+            }
+
+            section>div:nth-of-type(5) {
+                display: block;
+            }
+        }
+
+        @media (max-width: 540px) {
+            section>div {
+                width: 46%;
+                margin: 2%;
+            }
+
+            section>div:nth-of-type(5n) {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header></header>
+        <div class="main"></div>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <footer></footer>
+    </div>
+</body>
+
+</html>

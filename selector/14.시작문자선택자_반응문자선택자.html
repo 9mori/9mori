@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시작문자선택자</title>
+    <style>
+        p::first-letter {
+            font-size: 3em;
+            color: red;
+        }
+
+        P::first-line {
+            color: blue;
+        }
+
+        p::selection {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit</h1>
+    <p>span.largerLorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor placeat quasi nostrum ratione
+        doloribus deserunt,
+        illo inventore officiis minima, deleniti quas, maxime sit? Molestiae distinctio est quaerat sapiente nemo at.
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor placeat quasi nostrum ratione doloribus deserunt,
+        illo inventore officiis minima, deleniti quas, maxime sit? Molestiae distinctio est quaerat sapiente nemo at.
+    </p>
+</body>
+
+</html>

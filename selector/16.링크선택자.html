@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크선택자</title>
+    <style>
+        /* a:link, <- 이게 정석인데 링크는 기본값이라 안적어줘도 무방 */
+        a,
+        a:visited {
+            color: #222;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="link">
+        <a href="http://naver.com" target="_blank">네이버</a><br><br>
+        <a href="http://daum.net" target="_blank">다음</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조선택자</title>
+    <style>
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: orange;
+            /* odd 홀수 써도됌*/
+        }
+
+        li:nth-child(2n) {
+            background-color: tomato;
+            /* even 짝수 써도됌*/
+        }
+
+        /* li:nth-child(1) {
+            border-radius: 10px 0 0 10px;
+        }
+
+        li:nth-child(7) {
+            border-radius: 0 10px 10px 0;
+        } */
+
+        li:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+
+        li:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+
+        li:hover {
+            background-color: bisque;
+            cursor: pointer;
+            transition: all 0.7s;
+        }
+
+        li:active {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+            <li>Fifth</li>
+            <li>Sixth</li>
+            <li>Seventh</li>
+        </ul>
+    </div>
+</body>
+
+</html>

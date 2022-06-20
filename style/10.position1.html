@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        .red {
+            background-color: red;
+            left: 10px;
+            top: 10px;
+            z-index: 100;
+            /* x,y,z 에서 z축은 깊이 / 숫자가 클수록 앞으로 옴*/
+        }
+
+        .green {
+            background-color: green;
+            left: 50px;
+            top: 50px;
+            z-index: 102;
+        }
+
+        .blue {
+            background-color: blue;
+            left: 90px;
+            top: 90px;
+            z-index: 101;
+        }
+
+        body>div {
+            position: relative;
+            background-color: yellow;
+            border: 3px soild black;
+            width: 400px;
+            height: 100px;
+            overflow: hidden;
+            overflow-y: scroll;
+            /* overflow는 상자 밖으로 나간 객체들을 자름! */
+        }
+
+        .boxA::-webkit-scrollbar {
+            display: none !important;
+            /* !important는 css에서 가장 우선순위가 높음 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>123</h1>
+    <div class="boxA">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+</body>
+
+</html>

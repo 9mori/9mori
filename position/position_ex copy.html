@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_test</title>
+    <style>
+        .static1 {
+            position: static;
+            background-color: grey;
+            height: 100px;
+        }
+
+        .relative {
+            background-color: bisque;
+            height: 500px;
+        }
+
+        .absolte {
+            position: relative;
+            margin: 0 auto;
+            width: 1400px;
+            height: 400px;
+            background-color: red;
+        }
+
+        .absolute1 {
+            position: absolute;
+            background-color: blue;
+            height: 400px;
+            width: 400px;
+        }
+
+        .absolute2 {
+            position: absolute;
+            background-color: blue;
+            height: 400px;
+            width: 400px;
+            left: 500px;
+        }
+
+        .absolute3 {
+            position: absolute;
+            background-color: blue;
+            height: 400px;
+            width: 400px;
+            left: 1000px;
+        }
+
+        .static2 {
+            position: static;
+            background-color: grey;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static1"></div>
+    <div class="relative">
+        <div class="absolte">
+            <div class="absolute1">11</div>
+            <div class="absolute2">11</div>
+            <div class="absolute3">11</div>
+        </div>
+    </div>
+    <div class="static2"></div>
+</body>
+
+</html>

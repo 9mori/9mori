@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강승구</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+        /* 초기화 코드 */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        li {
+            list-style: none;
+            /* 앞에 점들 제거 */
+        }
+
+        a {
+            text-decoration: none;
+            /* 하이퍼링크 밑줄 제거 */
+        }
+
+        img {
+            border: 0;
+        }
+
+        #main_header {
+            width: 960px;
+            margin: 0 auto;
+            /* margin 중앙 정렬 */
+            position: relative;
+            height: 160px;
+        }
+
+        #main_header #title {
+            position: absolute;
+            left: 20px;
+            top: 30px;
+            font-family: 'Nanum Pen Script', cursive;
+        }
+
+        #main_header #main_gnb {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        #main_header #main_lnb {
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+        }
+
+        #main_gnb ul {
+            overflow: hidden;
+            /* 상자밖으로 나간 객체를 숨김 */
+        }
+
+        #main_gnb ul li {
+            float: left;
+            /* 가로 정렬 */
+        }
+
+        #main_gnb ul li a {
+            display: block;
+            padding: 2px 10px;
+            border: 1px solid black;
+        }
+
+        #main_gnb ul li a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #main_gnb ul li:first-child a {
+            border-radius: 10px 0 0 10px;
+        }
+
+        #main_gnb ul li:last-child a {
+            border-radius: 0 10px 10px 0;
+        }
+
+        #main_lnb ul {
+            overflow: hidden;
+        }
+
+        #main_lnb ul li {
+            float: left;
+        }
+
+        #main_lnb ul li a {
+            display: block;
+            padding: 10px 20px;
+            border: 1px solid black;
+        }
+
+        #main_lnb ul li a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #main_lnb ul li:first-child a {
+            border-radius: 10px 0 0 10px;
+        }
+
+        #main_lnb ul li:last-child a {
+            border-radius: 0 10px 10px 0;
+        }
+
+        /* 컨텐츠 영역 */
+        #content {
+            width: 960px;
+            margin: auto;
+        }
+
+        #content #main_section {
+            width: 750px;
+            float: left;
+        }
+
+        #content #main_aside {
+            width: 200px;
+            float: right;
+        }
+
+        #content #main_section .main_article {
+            margin-bottom: 10px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        /* aside */
+        input {
+            display: none;
+        }
+
+        input~div {
+            display: none;
+        }
+
+        input:nth-of-type(1):checked~div:nth-of-type(1) {
+            display: block;
+        }
+
+        input:nth-of-type(2):checked~div:nth-of-type(2) {
+            display: block;
+        }
+
+        section.buttons {
+            overflow: hidden;
+        }
+
+        section.buttons label {
+            display: block;
+            /* width height를 주기위해 block */
+            float: left;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            /* 박스안 세로로 중앙에오게 높이(30px)만큼 지정 */
+            text-align: center;
+            /* 박스안 가로로 중앙에오게 */
+            box-sizing: border-box;
+            border: 1px solid black;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        input:nth-of-type(1):checked~section.buttons label:nth-of-type(1) {
+            background-color: black;
+            color: white;
+        }
+
+        input:nth-of-type(2):checked~section.buttons label:nth-of-type(2) {
+            background-color: black;
+            color: white;
+        }
+
+        .item {
+            overflow: hidden;
+            padding: 10px;
+            border: 1px solid black;
+            border-top: none;
+        }
+
+        .thumbnail {
+            float: left;
+        }
+
+        .description {
+            float: left;
+            margin-left: 10px;
+        }
+
+        .description strong {
+            display: block;
+            width: 120px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 텍스트가 영역을 넘치면 줄바꿈 안하고 ...처리 위 3개는 세트 */
+        }
+
+
+
+        /* 푸터 */
+        footer#main_footer {
+            clear: both;
+            width: 960px;
+            margin: 0 auto 10px;
+            /* margin-bottom: 10px; */
+            /* margin 상좌우하 위랑 똑같음 */
+            border: 1px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main_header">
+        <div id="title">
+            <h1>Web Design</h1>
+            <h2>HTML5 + CSS3 Basic</h2>
+        </div>
+        <nav id="main_gnb">
+            <ul>
+                <li><a href="">Web</a></li>
+                <li><a href="">Mobile</a></li>
+                <li><a href="">Game</a></li>
+                <li><a href="">Simulation</a></li>
+                <li><a href="">Date</a></li>
+            </ul>
+        </nav>
+        <nav id="main_lnb">
+            <ul>
+                <li><a href="">HTML5</a></li>
+                <li><a href="">CSS3</a></li>
+                <li><a href="">JavaScript</a></li>
+                <li><a href="">jQuery</a></li>
+                <li><a href="">Node.js</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <section id="main_section">
+            <article class="main_article">
+                <h1>Main Article</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, officia! Pariatur quia facilis
+                    sunt nisi, quos, commodi culpa modi nemo quidem cupiditate autem deserunt vero, iste animi labore
+                    laudantium facere.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, officia!
+                    Pariatur quia facilis
+                    sunt nisi, quos, commodi culpa modi nemo quidem cupiditate autem deserunt vero, iste animi labore
+                    laudantium facere.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, officia!
+                    Pariatur quia facilis
+                    sunt nisi, quos, commodi culpa modi nemo quidem cupiditate autem deserunt vero, iste animi labore
+                    laudantium facere.</p>
+            </article>
+            <article class="main_article">
+                <h1>Main Article</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, officia! Pariatur quia facilis
+                    sunt nisi, quos, commodi culpa modi nemo quidem cupiditate autem deserunt vero, iste animi labore
+                    laudantium facere.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, officia!
+                    Pariatur quia facilis
+                    sunt nisi, quos, commodi culpa modi nemo quidem cupiditate autem deserunt vero, iste animi labore
+                    laudantium facere.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, officia!
+                    Pariatur quia facilis
+                    sunt nisi, quos, commodi culpa modi nemo quidem cupiditate autem deserunt vero, iste animi labore
+                    laudantium facere.</p>
+            </article>
+            <article class="main_article">
+                <h1>Main Article</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, officia! Pariatur quia facilis
+                    sunt nisi, quos, commodi culpa modi nemo quidem cupiditate autem deserunt vero, iste animi labore
+                    laudantium facere.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, officia!
+                    Pariatur quia facilis
+                    sunt nisi, quos, commodi culpa modi nemo quidem cupiditate autem deserunt vero, iste animi labore
+                    laudantium facere.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, officia!
+                    Pariatur quia facilis
+                    sunt nisi, quos, commodi culpa modi nemo quidem cupiditate autem deserunt vero, iste animi labore
+                    laudantium facere.</p>
+            </article>
+        </section>
+        <aside id="main_aside">
+            <input type="radio" id="first" name="tab" checked>
+            <input type="radio" id="second" name="tab">
+            <section class="buttons">
+                <label for="first">First</label>
+                <label for="second">Second</label>
+            </section>
+            <div class="tab_item">
+                <ul>
+                    <li class="item">
+                        <a href="">
+                            <div class="thumbnail">
+                                <img src="https://via.placeholder.com/45x45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>HTML5</strong>
+                                <p>2022-05-24</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <div class="thumbnail">
+                                <img src="https://via.placeholder.com/45x45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>HTML5</strong>
+                                <p>2022-05-24</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <div class="thumbnail">
+                                <img src="https://via.placeholder.com/45x45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>HTML5</strong>
+                                <p>2022-05-24</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <div class="thumbnail">
+                                <img src="https://via.placeholder.com/45x45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>HTML5</strong>
+                                <p>2022-05-24</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <div class="thumbnail">
+                                <img src="https://via.placeholder.com/45x45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>HTML5</strong>
+                                <p>2022-05-24</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- -------------------------------------------------------------- -->
+            <div class="tab_item">
+                <ul>
+                    <li class="item">
+                        <a href="">
+                            <div class="thumbnail">
+                                <img src="https://via.placeholder.com/45x45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>CSS3</strong>
+                                <p>2022-05-24</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <div class="thumbnail">
+                                <img src="https://via.placeholder.com/45x45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>CSS3</strong>
+                                <p>2022-05-24</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <div class="thumbnail">
+                                <img src="https://via.placeholder.com/45x45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>CSS3</strong>
+                                <p>2022-05-24</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <div class="thumbnail">
+                                <img src="https://via.placeholder.com/45x45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>CSS3</strong>
+                                <p>2022-05-24</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <div class="thumbnail">
+                                <img src="https://via.placeholder.com/45x45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>CSS3</strong>
+                                <p>2022-05-24</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <footer id="main_footer">
+        <h3>HTML5 + CSS3 Basic</h3>
+        <address>Website Layout Basic</address>
+    </footer>
+</body>
+
+</html>

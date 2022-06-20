@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 42px;
+        }
+
+        .staticPosition {
+            /* 정적인 */
+            /* position: static; */
+            height: 400px;
+            background-color: gray;
+        }
+
+        .relativePosition {
+            /* 상대적인 */
+            position: relative;
+            /* 위치값 : top, bottom, left, right */
+            left: 100px;
+            top: 100px;
+            height: 300px;
+            background-color: beige;
+        }
+
+        .absolutePosition {
+            /* 절대적인 */
+            /* width: 100%; */
+            position: absolute;
+            /* top: 100px; */
+            left: 100px;
+            height: 100px;
+            background-color: darkmagenta;
+        }
+
+        .a_position1 {
+            left: 100px;
+        }
+
+        .a_position2 {
+            left: 300px;
+        }
+
+        .a_position3 {
+            left: 500px;
+        }
+
+        .fixedPosition {
+            /* 화면에 고정된 값, 스크롤해도 움직이면서 그 자리에 있음 */
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            width: 120px;
+            height: 120px;
+            background-color: brown;
+        }
+
+        /* static<relative<absolute<fiexd 순으로 위로 올라옴 */
+    </style>
+</head>
+
+<body>
+    <div class="staticPosition">static</div>
+    <div class="relativePosition">relative
+        <div class="absolutePosition a_position1">absolute</div>
+        <div class="absolutePosition a_position2">absolute</div>
+        <div class="absolutePosition a_position3">absolute</div>
+    </div>
+    <div class="fixedPosition">fixed</div>
+</body>
+
+</html>

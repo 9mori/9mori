@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전후문자선택자</title>
+    <style>
+        .feet {
+            display: block;
+            width: 100px;
+            height: 50px;
+            position: relative;
+            background-color: tomato;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .feet::before {
+            content: "1피트 = "
+        }
+
+        /* .feet::after {
+            content: "cm"
+        } */
+
+        .feet::after {
+            content: "";
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background-color: tomato;
+            transform: rotate(45deg);
+            position: absolute;
+            right: -16px;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="feet">"30.48"</span>
+
+</body>
+
+</html>

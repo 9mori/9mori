@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="password" placeholder="찾을거 입력해라 빨리" autofocus="autofocus" required="required">
+        <input type="submit" value="찾기">
+        <input type="radio">
+        <br>
+        <input type="checkbox">
+        <input type="file">
+        <br>
+        <input type="button">
+        <input type="reset">
+        <input type="color">
+        <input type="tel"><br>
+    </form>
+    <form action="">
+        <ul>
+            <li><input type="checkbox" value="korean" name="subject">국어</li>
+            <li><input type="checkbox" value="english" name="subject">영어</li>
+            <li><input type="checkbox" value="math" name="subject">수학</li>
+        </ul>
+    </form>
+    <form action="">
+        <ul>
+            <li><input type="radio" value="korean" name="subject">국어</li>
+            <li><input type="radio" value="english" name="subject">영어</li>
+            <li><input type="radio" value="math" name="subject">수학</li>
+        </ul>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>회원가입</legend>
+            <label for="userName">메뉴열기</label>
+            <input type="radio" id="userName">
+        </fieldset>
+    </form>
+
+    <form action="">
+        <select>
+            <optgroup label="HTML5">
+                <option>항목1</option>
+                <option>항목2</option>
+                <option>항목3</option>
+                <option>항목4</option>
+                <option>항목5</option>
+            </optgroup>
+            <optgroup label="CSS3">
+                <option>항목1</option>
+                <option>항목2</option>
+                <option>항목3</option>
+                <option>항목4</option>
+                <option>항목5</option>
+            </optgroup>
+        </select>
+        <textarea name="" id="" cols="25" rows="10">배고프다 오늘 뭐먹지</textarea>
+        <br>
+        <button type="reset">
+            <img src="images/tick.png" alt="">전송하기
+        </button>
+    </form>
+</body>
+
+</html>

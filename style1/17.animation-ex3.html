@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 1px solid white;
+            transform: translate(50%, 50%);
+        }
+
+        .circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: yellow;
+            animation: cle 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes cle {
+            0% {
+                background-color: yellow;
+                left: -5px;
+                top: -5px;
+            }
+
+            25% {
+                background-color: red;
+                left: 295px;
+                top: -5px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 295px;
+                top: 295px;
+            }
+
+            75% {
+                background-color: green;
+                left: -5px;
+                top: 295px;
+            }
+
+            100% {
+                background-color: yellow;
+                left: -5px;
+                top: -5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="circle"></div>
+    </div>
+</body>
+
+</html>

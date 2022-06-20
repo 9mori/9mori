@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: purple;
+            color: white;
+            position: relative;
+            animation: move 3s linear;
+        }
+
+        #box1 {
+            animation-delay: 1s;
+            animation-direction: reverse;
+            animation-iteration-count: 2;
+            /* 반복 횟수 */
+        }
+
+        #box2 {
+            animation-delay: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: 3;
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .location_info {
+            min-width: 1200px;
+            background-color: #9cc15c;
+            height: 700px;
+            position: relative;
+        }
+
+        .location_info>img {
+            position: absolute;
+            top: 0;
+            right: 50%;
+            /*라이트는 오른쪽 수직선 기준, 래프트는 왼쪽 수직선 기준 */
+        }
+
+        .location_info>div {
+            position: absolute;
+            left: 56%;
+            top: 160px;
+        }
+
+        .location_info>div strong {
+            font-size: 40px;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .location_info>div>span {
+            color: #fff;
+            display: inline-block;
+            margin-bottom: 45px;
+        }
+
+        .location_info>div p {
+            font-size: 19px;
+            margin-bottom: 20px;
+        }
+
+        .location_info>div ul {
+            margin-bottom: 80px;
+        }
+
+        .location_info>div li {
+            color: #fff;
+            margin: 7px 0;
+        }
+
+        .location_info>div li span {
+            display: inline-block;
+            width: 110px;
+        }
+
+        .location_info>div a {
+            display: inline-block;
+            /* 자기 크기 만큼 줄어듦 */
+            background-color: #414042;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="location_info">
+        <img src="images/index_bg.jpg" alt="">
+        <div>
+            <strong>오시는 길</strong>
+            <span>Direction</span>
+            <p>부산광역시 사상구 새벽로 131, 1동 101호</p>
+            <ul>
+                <li>
+                    <span>Tel.</span>051-333-1234
+                </li>
+                <li><span>Fax.</span>051-334-5678</li>
+                <li><span>E-mal.</span>hde@hde.co.kr</li>
+            </ul>
+            <a href="">지도 자세히 보기</a>
+        </div>
+    </div>
+</body>
+
+</html>

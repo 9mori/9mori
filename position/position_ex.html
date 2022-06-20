@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 30px;
+        }
+
+        .static {
+            position: static;
+            height: 70px;
+            background-color: grey;
+        }
+
+        .relative {
+            position: relative;
+            background-color: gainsboro;
+            /* margin: auto; */
+            height: 400px;
+        }
+
+        .absoluteBack {
+            position: absolute;
+            background-color: red;
+            left: 5%;
+            right: 5%;
+            height: 350px;
+        }
+
+        .a_Left {
+            position: absolute;
+            background-color: blue;
+            left: 5%;
+            right: 70%;
+            height: 350px;
+        }
+
+        .a_Right {
+            position: absolute;
+            background-color: blue;
+            left: 70%;
+            right: 5%;
+            height: 350px;
+        }
+
+        .a_Center {
+            position: absolute;
+            background-color: blue;
+            left: 35%;
+            right: 35%;
+            height: 350px;
+        }
+
+        .static1 {
+            position: static;
+            height: 50px;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">헤더</div>
+    <div class="relative">
+        <div class="absoluteBack"></div>
+        <div class="absolute a_Left">제품</div>
+        <div class="absolute a_Right">제품</div>
+        <div class="absolute a_Center">제품</div>
+    </div>
+    <div class="static1">푸터</div>
+
+</body>
+
+</html>

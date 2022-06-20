@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+a:link,
+
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h1.shadow {
+    text-shadow: 2px 2px 0 pink;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* 헤더 */
+header {
+    text-align: center;
+    padding-top: 10px;
+    background: linear-gradient(to bottom, #d8d8d8, #d8d8d8 191px, #000000 191px, #000000);
+    /* 191px까지 회색으로 왔다가 거기서 다시 검은색으로 쭉. 0%~50% 50%~100% 같은의미*/
+}
+
+header ul {
+    width: 1200px;
+    margin: 10px auto 0;
+    /* 상 좌우 하 */
+    overflow: hidden;
+    display: flex;
+}
+
+header ul li {
+    width: 20%;
+    /* float: left; */
+}
+
+header ul li a,
+a:visited {
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    line-height: 48px;
+    /* 높이랑 똑같은값 -> 행간 중간에 맞춤 */
+    border-right: 1px solid #aeaeae;
+}
+
+header ul li:nth-of-type(5) a {
+    border-right: 0;
+}
+
+header ul li a:hover {
+    color: #e6007e;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 비주얼 영역 */
+.visual_area {
+    height: 630px;
+    /* background-image: url(../images/main-image.jpg); */
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.visual_area li {
+    height: 630px;
+
+}
+
+.visual_area li.slider-one {
+    background: url(../images/easter-01.jpg);
+    background-position: center;
+
+}
+
+.visual_area li.slider-two {
+    background: url(../images/main-image.jpg);
+    background-position: center;
+}
+
+.visual_area li.slider-three {
+    background: url(../images/easter-03.jpg);
+    background-position: center;
+}
+
+.visual_area ul li div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.visual_area ul li div h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+    text-shadow: 5px 0 0 white, 1px 0 0 white
+}
+
+.visual_area ul li div p {
+    text-align: center;
+    padding: 15px 0;
+    /* 상하 / 좌우  */
+}
+
+.visual_area div p mark {
+    background-color: #c5da9b;
+}
+
+.visual_area div p i {
+    font-style: italic;
+    /* 옆으로 눞힘 효과 */
+
+}
+
+/* bx controls */
+
+.bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 40px;
+    height: 76px;
+    opacity: 0.4;
+    transition: all .3s;
+    text-indent: -9999px;
+    /* 글자를 없앨수없으니 옆으로 밀어버림 */
+}
+
+.bx-controls-direction a:hover {
+    opacity: 0.9;
+}
+
+.bx-controls-direction .bx-prev {
+    background: url(../images/main_arrow_left.png);
+    left: 50px;
+}
+
+.bx-controls-direction .bx-next {
+    background: url(../images/main_arrow_right.png);
+    right: 50px;
+}
+
+.bx-pager {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.bx-pager div {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.bx-pager div a {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #aaa;
+    border-radius: 4px;
+    font-size: 0;
+}
+
+.bx-pager div a.active {
+    background-color: white;
+    width: 40px;
+    transition: all .3s;
+}
+
+
+
+/* 인트로 */
+.intro {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.intro>div {
+    display: flex;
+}
+
+.intro>div img {
+    /* float: left; */
+    border-radius: 50%;
+    margin-right: 60px;
+    margin-top: -20px;
+    height: 300px;
+}
+
+.intro>div ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.intro>div ul li span {
+    /* display: inline; */
+    width: 110px;
+    font-weight: bold;
+}
+
+.intro>div ul li:nth-of-type(3) {
+    margin-bottom: 30px;
+}
+
+.intro>div ul li:nth-of-type(4) {
+    line-height: 1.5;
+    /* 줄간격 */
+}
+
+/* 포트폴리오 */
+.portfolio {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+ul.port_wrap {
+    overflow: hidden;
+    background-color: pink;
+}
+
+ul.port_wrap li {
+    /* float: left; */
+    /* width: 30%; */
+    height: 560px;
+    /* margin-right: 5%; */
+    box-sizing: border-box;
+    border: 1px solid #dadada;
+    transition: all 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+    background-size: auto 100%;
+    /* background-size: cover; */
+    background-position: center;
+}
+
+
+ul.port_wrap li.img1 {
+    background-image: url(../images/easter-01.jpg);
+}
+
+ul.port_wrap li.img2 {
+    background-image: url(../images/easter-02.jpg);
+}
+
+ul.port_wrap li.img3 {
+    background-image: url(../images/easter-03.jpg);
+    margin: 0;
+}
+
+ul.port_wrap li:hover {
+    background-size: auto 120%;
+}
+
+ul.port_wrap li .div_black {
+    height: 560px;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 1s;
+    color: white;
+    position: relative;
+}
+
+ul.port_wrap li:hover .div_black {
+    opacity: 1;
+}
+
+ul.port_wrap li .div_black strong {
+    position: absolute;
+    top: 400px;
+    left: -100%;
+    opacity: 0;
+    transition: all .7s;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+ul.port_wrap li:hover .div_black strong {
+    opacity: 1;
+    left: 24px;
+}
+
+ul.port_wrap li .div_black span {
+    display: block;
+    width: 1px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 460px;
+    left: 24px;
+    opacity: 0;
+    transition: all .5s;
+    transition-delay: .4s;
+}
+
+ul.port_wrap li:hover .div_black span {
+    width: calc(100% - 48px);
+    opacity: 1;
+}
+
+ul.port_wrap li .div_black p {
+    position: absolute;
+    top: 480px;
+    left: 24px;
+    opacity: 0;
+
+}
+
+ul.port_wrap li:hover .div_black p {
+    opacity: 1;
+    transition: all .3s;
+    transition-delay: .9s;
+}
+
+/* 비디오 */
+.video {
+    height: 825px;
+}
+
+.video>div {
+    height: 675px;
+    background-color: #dadada;
+}
+
+.video>div .video_wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 푸터 */
+footer {
+    height: 197px;
+    background-color: #303841;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul.footer_menu {
+    border-bottom: 1px solid #666666;
+}
+
+footer ul.footer_menu li {
+    margin: 10px 20px;
+    /* display: inline-block; */
+    /* 텍스트 센터와 같은 속성 */
+}
+
+footer p {
+    margin-top: 57px;
+}

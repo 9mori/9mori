@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        /* 대표 속성 : justify-content - 주축 정렬 */
+        .flex_container {
+            background-color: #ccc;
+            height: 300px;
+            display: flex;
+            /* 선언과 동시에 주축 정렬 */
+            /* justify-content: flex-start; */
+            /* 시작 위치 */
+            /* justify-content: flex-end; */
+            /* 끝 위치 */
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;
+            /* 각 요소의 좌우에 같은 여백 */
+            justify-content: space-evenly;
+            /* 모든 같은 여백 */
+        }
+
+        .flex_item {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(20, 124, 168);
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex_container">
+        <div class="flex_item">1</div>
+        <div class="flex_item">2</div>
+        <div class="flex_item">3</div>
+        <div class="flex_item">4</div>
+    </div>
+</body>
+
+</html>
