@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+
+        .container {
+            background-color: #ccc;
+        }
+
+        .container nav {
+            display: flex;
+            justify-content: center;
+            height: 40px;
+            overflow: hidden;
+            /* overflow: hidden은 nav 높이 40px 빼고는 숨김 ! !  */
+            line-height: 40px;
+            transition: all .4s;
+        }
+
+        nav ul {
+            text-align: center;
+        }
+
+        nav>ul>li {
+            display: inline-block;
+            /* 아이들을 각 각 세로정렬함 */
+        }
+
+        nav>ul>li>a {
+            display: block;
+            /* 상하 여백이 있을경우 블럭 써줘야함 */
+            padding: 0 30px;
+        }
+
+        nav li li a {
+            display: block;
+            /* background-color: #ccc; */
+        }
+
+        nav:hover {
+            height: 200px;
+            /* 호버하면 높이 200px만큼 늘어나고 오버플로우에 숨어 있던 아이들이 같이 나옴 */
+        }
+
+        nav ul li a:hover {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="">1DEPTH</a>
+                    <ul>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">1DEPTH</a>
+                    <ul>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">1DEPTH</a>
+                    <ul>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">1DEPTH</a>
+                    <ul>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">1DEPTH</a>
+                    <ul>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">1DEPTH</a>
+                    <ul>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                        <li>
+                            <a href="">2DEPTH</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
