@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style-flex gnb.css">
+    <link rel="stylesheet" href="css/style-bxani.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <!-- bxslider -->
@@ -20,75 +20,29 @@
 <body>
     <header>
         <img src="images/logo.png" alt="">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">MAIN</a>
-                    <ul>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#intro">INTRODUCE</a>
-                    <ul>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#portfolio">DESIGN</a>
-                    <ul>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#video">VIDEO</a>
-                    <ul>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">CONTECT-US</a>
-                    <ul>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <ul>
+            <li><a href="#">MAIN</a></li>
+            <li><a href="#intro">INTRODUCE</a></li>
+            <li><a href="#portfolio">DESIGN</a></li>
+            <li><a href="#video">VIDEO</a></li>
+            <li><a href="">CONTECT-US</a></li>
+        </ul>
     </header>
     <div class="visual_area">
-        <!-- <div>
-            <h1>DIGITAL CONVERGENCE</h1>
-            <p><mark><i>JAVA + SPRING + FRAMEWORK</i></mark></p>
-        </div> -->
         <ul class="slider1">
-            <li class="slider-one">
+            <li class="slider-one ani">
                 <div>
                     <h1>DIGITAL CONVERGENCE</h1>
                     <p><mark><i>JAVA + SPRING + FRAMEWORK</i></mark></p>
                 </div>
             </li>
-            <li class="slider-two">
+            <li class="slider-two ani">
                 <div>
                     <h1>DIGITAL CONVERGENCE</h1>
                     <p><mark><i>JAVA + SPRING + FRAMEWORK</i></mark></p>
                 </div>
             </li>
-            <li class="slider-three">
+            <li class="slider-three ani">
                 <div>
                     <h1>DIGITAL CONVERGENCE</h1>
                     <p><mark><i>JAVA + SPRING + FRAMEWORK</i></mark></p>
@@ -185,18 +139,6 @@
                 $.scrollTo(this.hash || 0, 500);  // 해시 (#1, #2...) 가 있는 위치 클릭시 해당 해시로 스크롤 
                 e.preventDefault();  // 원래 가지고 있던 링크 기능 해제 
             });
-        });
-    </script>
-    <script>
-        $(function () {
-            $("header > nav > ul > li").hover(
-                function () {
-                    $(this).find("ul").stop().slideDown(300);
-                },
-                function () {
-                    $(this).find("ul").stop().slideUp(300);
-                }
-            );
         });
     </script>
 </body>

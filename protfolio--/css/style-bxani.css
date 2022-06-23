@@ -27,79 +27,38 @@ header {
     /* 191px까지 회색으로 왔다가 거기서 다시 검은색으로 쭉. 0%~50% 50%~100% 같은의미*/
 }
 
-nav {
-    text-align: center;
-    background-color: #000;
-}
-
-
-nav>ul>li {
-    display: inline-block;
-    position: relative;
-}
-
-nav>ul>li>a {
-    display: block;
-    padding: 0 50px;
-    line-height: 40px;
-    font-size: 0.875em;
-    color: #fff;
-    border-right: 1px solid #aeaeae;
-}
-
-nav>ul>li:nth-of-type(5)>a {
-    border-right: 0;
-}
-
-
-nav li ul {
-    display: none;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-}
-
-nav li li a {
-    display: block;
-    line-height: 40px;
-    text-align: center;
-    font-size: 0.875em;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #000;
-    transition: all .3s;
-}
-
-
 header ul {
-    /* width: 1200px; */
-    /* margin: 10px auto 0; */
+    width: 1200px;
+    margin: 10px auto 0;
     /* 상 좌우 하 */
-    /* overflow: hidden; */
-    /* display: flex; */
+    overflow: hidden;
+    display: flex;
 }
 
 header ul li {
-    /* width: 20%; */
+    width: 20%;
     /* float: left; */
 }
 
 header ul li a,
 a:visited {
-    /* color: white; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* height: 48px; */
-    /* line-height: 48px; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    line-height: 48px;
     /* 높이랑 똑같은값 -> 행간 중간에 맞춤 */
-    /* border-right: 1px solid #aeaeae; */
+    border-right: 1px solid #aeaeae;
 }
 
 header ul li:nth-of-type(5) a {
-    /* border-right: 0; */
+    border-right: 0;
 }
 
 header ul li a:hover {
     color: #e6007e;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* 비주얼 영역 */
@@ -157,7 +116,59 @@ header ul li a:hover {
 .visual_area div p i {
     font-style: italic;
     /* 옆으로 눞힘 효과 */
+}
 
+/* ani slider */
+
+
+.slider1 .ani>div>* {
+    opacity: 0;
+}
+
+/* .slider1 .ani[aria-hidden="false"]>div>* {
+    opacity: 1;
+} */
+
+.slider1 .ani[aria-hidden="false"] div h1 {
+    opacity: 1;
+    transition: opacity 3s;
+    animation: html 3s;
+    /* 애니메이션 시간이랑 트랜지션 오파시티 시간이랑 맞추면 
+    키프레임에 굳이 오파시티 안줘도 됨 */
+}
+
+
+@keyframes html {
+    0% {
+        /* opacity: 0; */
+        transform: translateY(-30px);
+    }
+
+    100% {
+        /* opacity: 1; */
+        transform: translateY(0);
+    }
+}
+
+.slider1 .ani[aria-hidden="false"] div p {
+    transition: opacity .5s;
+    /* 트랜지션 오파시티 효과를 안줘도
+    키프레임에서 오파시티주면 비슷한 효과 내기 가능 */
+    animation: updown 3s;
+    opacity: 1;
+}
+
+
+@keyframes updown {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* bx controls */

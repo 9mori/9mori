@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.interest {
+    background-color: #fcf8f8;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 50px 0;
+}
+
+.interest .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.sinia {
+    display: inline-block;
+    width: 385px;
+    height: 64px;
+    line-height: 64px;
+    background-color: #476aba;
+}
+
+.interest .menu strong {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.interest .menu span {
+    color: rgb(247, 207, 132);
+}
+
+.interest .menu .menu2 {
+    width: 800px;
+    height: 64px;
+    line-height: 64px;
+}
+
+.interest .menu .menu2 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interest .menu .menu2 ul li {
+    width: 160px;
+    border: 1px solid #ccc;
+    border-right: 0;
+    font-size: 13px;
+    background-color: #fff;
+}
+
+.interest .menu .menu2 ul li:hover {
+    background-color: #d3bebe;
+}
+
+.interest .menu .menu2 ul li:last-child {
+    border-right: 1px solid #ccc;
+}
+
+.interest .menu .menu2 ul li img {
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.visual {
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 80px;
+}
+
+.visual .main_img div {
+    text-align: left;
+
+    line-height: 3;
+}
+
+.visual .main_img div h2 {
+    margin-top: 15px;
+    color: #476aba;
+}
+
+
+.visual .main_img div span {
+    display: block;
+    width: 50px;
+    height: 1px;
+    border-bottom: 1px solid #476aba;
+}
+
+.visual .depth1 {
+    width: 800px;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.visual .depth1 li {
+    padding: 30px;
+    border-bottom: 1px solid #e9e0e0;
+    background-color: #fff;
+}
+
+.visual .depth1 li:hover a {
+    text-decoration: underline;
+}
+
+.visual .depth1 li:first-child {
+    border-top: 1px solid #476aba;
+}
+
+.visual .depth1 li span {
+    display: inline-block;
+    color: #476aba;
+    width: 110px;
+    font-weight: bold;
+}

@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style-flex gnb.css">
+    <link rel="stylesheet" href="css/style-flex-side.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <!-- bxslider -->
@@ -18,57 +19,29 @@
 </head>
 
 <body>
+
     <header>
         <img src="images/logo.png" alt="">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">MAIN</a>
-                    <ul>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#intro">INTRODUCE</a>
-                    <ul>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#portfolio">DESIGN</a>
-                    <ul>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#video">VIDEO</a>
-                    <ul>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">CONTECT-US</a>
-                    <ul>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                        <li><a href="">2DEPTH</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <div class="wrap">
+            <div class="open">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="navv">
+                <div class="close"><i class="fa-solid fa-x"></i></div>
+                <p>menu1</p>
+                <p>menu2</p>
+                <p>menu3</p>
+                <p>menu4</p>
+                <p>menu5</p>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">MAIN</a></li>
+            <li><a href="#intro">INTRODUCE</a></li>
+            <li><a href="#portfolio">DESIGN</a></li>
+            <li><a href="#video">VIDEO</a></li>
+            <li><a href="">CONTECT-US</a></li>
+        </ul>
     </header>
     <div class="visual_area">
         <!-- <div>
@@ -188,16 +161,15 @@
         });
     </script>
     <script>
-        $(function () {
-            $("header > nav > ul > li").hover(
-                function () {
-                    $(this).find("ul").stop().slideDown(300);
-                },
-                function () {
-                    $(this).find("ul").stop().slideUp(300);
-                }
-            );
+        $(document).ready(function () {
+            $('.open').click(function () {
+                $('.navv').animate({ 'top': 0 }, 500);
+            });
+            $('.close').click(function () {
+                $('.navv').animate({ 'top': '-100%' }, 500);
+            });
         });
+        // 숫자 0 이 아닌 값이 오면 따옴표로 감싸줘야함
     </script>
 </body>
 
