@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&fontAlignY=40&text=Welcome&desc=SeungGu%20GitHub%20Profile&descAlign=65&descAlignY=53&fontSize=90)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&fontAlignY=40&text=Welcome&desc=SeungGu%20GitHub%20Profile&descAlign=65&descAlignY=53&fontSize=90)
 
 <h3 align="center">✉Email✉</h3>
 <p align="center"> aodnsrhf@naver.com</p>
