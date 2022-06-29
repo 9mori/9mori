@@ -1,0 +1,437 @@
+@charset "utf-8";
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.interest {
+    background-color: #fcf8f8;
+}
+
+.main_title {
+    padding: 0 0 50px;
+}
+
+.main_title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0 0 20px;
+}
+
+.main_title p {
+    font-size: 14px;
+}
+
+.interest .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.sinia {
+    display: inline-block;
+    width: 385px;
+    height: 64px;
+    line-height: 64px;
+    background-color: #476aba;
+}
+
+.interest .menu strong {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.interest .menu span {
+    color: rgb(247, 207, 132);
+}
+
+.interest .menu .menu2 {
+    width: 800px;
+    height: 64px;
+    line-height: 64px;
+}
+
+.interest .menu .menu2 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interest .menu .menu2 ul li {
+    width: 160px;
+    border: 1px solid #ccc;
+    border-right: 0;
+    font-size: 13px;
+    background-color: #fff;
+}
+
+.interest .menu .menu2 ul li:hover {
+    background-color: #d3bebe;
+}
+
+.interest .menu .menu2 ul li:last-child {
+    border-right: 1px solid #ccc;
+}
+
+.interest .menu .menu2 ul li img {
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.visual {
+    display: flex;
+    margin-top: 20px;
+}
+
+.visual .main_img div {
+
+    text-align: left;
+
+    line-height: 3;
+}
+
+.visual .main_img div h2 {
+    margin-top: 15px;
+    color: #476aba;
+}
+
+
+.visual .main_img div span {
+    display: block;
+    width: 50px;
+    height: 1px;
+    border-bottom: 1px solid #476aba;
+}
+
+.visual .depth1 {
+    width: 100%;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.visual .depth1 li {
+    padding: 30px;
+    border-bottom: 1px solid #e9e0e0;
+    background-color: #fff;
+}
+
+.visual .depth1 li:hover a {
+    text-decoration: underline;
+}
+
+.visual .depth1 li:first-child {
+    border-top: 1px solid #476aba;
+}
+
+.visual .depth1 li span {
+    display: inline-block;
+    color: #476aba;
+    width: 110px;
+    font-weight: bold;
+}
+
+.edu_contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edu_contents h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.edu_contents span {
+    color: #288bcc;
+}
+
+.edu_def2 {
+    padding: 0 0 0 35px;
+}
+
+.edu_def2 .edu_box1 {
+    display: flex;
+}
+
+.def2_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.def2_title a {
+    width: 116px;
+    height: 36px;
+    font-size: 13px;
+    font-weight: blod;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.def2_title a:hover {
+    border: 1px solid #000;
+}
+
+.edu_box1 {
+    padding: 25px 0 0;
+}
+
+.edu_box1 div>img {
+    width: 232px;
+}
+
+.edu_box1 .edu_text {
+    text-align: left;
+    line-height: 1.4;
+    padding: 20px;
+}
+
+.edu_box1 h4 {
+    font-size: 20px;
+    color: #3d3d3d;
+}
+
+.edu_box1 ul li {
+    font-size: 14px;
+    color: #3d3d3d;
+}
+
+.edu_box1 p {
+    font-size: 14px;
+    color: #3d3d3d;
+}
+
+.edu_box1 div .edu_check {
+    display: flex;
+}
+
+.edu_box1 div .edu_check li {
+    width: 116px;
+    height: 40px;
+    background-color: #e7e7e7;
+}
+
+.edu_box1 div .edu_check li img {
+    vertical-align: middle;
+}
+
+.edu_box1 div .edu_check a {
+    line-height: 40px;
+}
+
+.travel {
+    background: url(../images/tra_bg.jpg) no-repeat center top;
+    background-size: cover;
+    height: 685px;
+}
+
+.travel .main_title {
+    color: #fff;
+}
+
+.tra_def {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tra_def .tra_box {
+    position: relative;
+    width: 384px;
+    height: 412px;
+    background-color: #fff;
+}
+
+.tra_def .tra_box .tra_logo {
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    z-index: 1;
+}
+
+.tra_def #box1 span {
+    color: #ff0000;
+}
+
+.tra_def #box2 span {
+    color: #122e80;
+}
+
+.tra_def #box3 span {
+    color: #288bcc;
+}
+
+.tra_def .tra_box p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+
+.tra_def .tra_box a {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.tra_def #box1 a {
+    background-color: #ff0000;
+}
+
+.tra_def #box2 a {
+    background-color: #122e80;
+}
+
+.tra_def #box3 a {
+    background-color: #288bcc;
+}
+
+.job_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.job_guin {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job_title {
+    width: 876px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.job_title span {
+    color: #288bcc;
+}
+
+.job_title a {
+    text-align: center;
+    width: 116px;
+    height: 36px;
+    font-size: 13px;
+    font-weight: blod;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.job_box {
+    width: 240px;
+    height: 242px;
+    padding: 20px;
+    border-top: 1px solid #288bcc;
+}
+
+.job_box .guin_img {
+    padding: 0 0 20px;
+}
+
+.guin_text {
+    color: #3d3d3d;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.guin_line {
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #288bcc;
+    margin: 20px 0;
+}
+
+.guin_text span:last-child {
+    color: #288bcc;
+}
+
+.job_box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 268px;
+    height: 276px;
+    border: 1px solid #ccc;
+}
+
+.job_box1 div:first-child {
+    height: 50%;
+}
+
+.job_box1 div:last-child {
+    height: 50%;
+    background-color: #eeeeee;
+}
+
+.job_box1 div:last-child h4 {
+    color: #589258;
+    font-size: 20px;
+    padding: 50px 0 10px;
+}
+
+.job_box1 div:last-child a {
+    color: #589258;
+    text-decoration: underline;
+}
+
+.job_box1 div:first-child img {
+    padding: 30px 0 0;
+}
+
+.hpcall {
+    height: 253px;
+    border: 1px solid #288bcc;
+}
+
+.happy .inner {
+    padding: 0;
+}
+
+.ad .inner {
+    padding: 30px 0;
+}
+
+.ad ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ad li {
+    width: 13.5%;
+    height: 50.75px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad li img {
+    width: 80%;
+}

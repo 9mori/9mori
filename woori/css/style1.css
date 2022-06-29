@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+header {
+    margin: 10px 0;
+}
+
+header .logo {
+    float: left;
+}
+
+
+.header_menu .top_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header_menu ul li {
+    margin: 0 5px;
+}
+
+.bottom {
+    height: 60px;
+}
+
+.bottom>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_menu .bottom_menu {
+    width: 600px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_menu .login {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    position: relative;
+    height: 520px;
+    margin: 0 auto;
+    background: url(../images/main_visual.jpg) 100%;
+}
+
+.main img {
+    display: block;
+    margin: 0 auto;
+}
+
+.main img:first-of-type {
+    padding-top: 130px;
+}
+
+.main div div img {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.short {
+    text-align: center;
+}
+
+.short .inner .title {
+    margin: 70px 0 50px;
+}
+
+.short .inner .title h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px
+}
+
+.short .inner ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.short .inner ul li {
+    position: relative;
+    width: 580px;
+    height: 280px;
+    margin-bottom: 80px;
+}
+
+.short .box1 img {
+    position: absolute;
+    left: 0;
+}
+
+.short .box1 div {
+    position: absolute;
+    width: 290px;
+    height: 280px;
+    right: 0;
+    background-color: #29a6d8;
+    color: #fff;
+}
+
+.short .box1 div strong {
+    display: block;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 30px 0;
+}
+
+.short .box1 div p {
+    line-height: 1.5;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.short .box1 div a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+    width: 120px;
+    height: 30px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 5px;
+}
+
+.short .box2 img {
+    position: absolute;
+    right: 0;
+}
+
+.short .box2 div {
+    position: absolute;
+    width: 290px;
+    height: 280px;
+    left: 0;
+    background-color: #203dbe;
+    color: #fff;
+}
+
+.short .box2 div strong {
+    display: block;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 30px 0;
+}
+
+.short .box2 div p {
+    line-height: 1.5;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.short .box2 div a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+    width: 120px;
+    height: 30px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 5px;
+}
+
+.short .box3 img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.short .box3 div {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.short .box3 div h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.short .box3 div a {
+    font-size: 14px;
+    line-height: 30px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.short .box4>img {
+    position: absolute;
+    left: 0;
+}
+
+.short .box4 .check {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    background-color: rgb(218, 207, 207);
+}
+
+.short .box4 .dep {
+    position: absolute;
+    width: 290px;
+    height: 280px;
+    right: 20px;
+    text-align: left;
+}
+
+.short .box4 .dep h3 {
+    font-size: 23px;
+    margin-top: 40px;
+}
+
+.short .box4 .dep span {
+    display: block;
+    height: 1px;
+    width: 50px;
+    border-bottom: 1px solid blue;
+    margin: 30px 0;
+}
+
+.short .box4 .dep p {
+    line-height: 1.5;
+}
+
+.short .box4 .eve {
+    position: absolute;
+    width: 575px;
+    top: -50px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    z-index: 2;
+}
+
+.short .box4 .eve h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.short .box4 .eve a {
+    font-size: 14px;
+    line-height: 30px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    height: 240px;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+footer .ftop {
+    height: 120px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+footer .ftop ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+footer .ftop ul li:last-child {
+    padding-left: 200px;
+}
+
+footer .fbottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+footer .fbottom p {
+    display: flex;
+    align-items: center;
+}
+
+footer .fbottom ul {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .fbottom ul li {
+    padding: 0 5px;
+}
