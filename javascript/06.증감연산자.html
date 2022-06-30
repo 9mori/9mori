@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num1 = 10;
+        var num2 = 20;
+        var result;
+
+        result = num1--; //9
+        document.write(result + "<br>");
+        result = ++num1; //10
+        document.write(result + "<br>");
+
+        result = num2++;
+        document.write(result + "<br>");
+        //num2먼저 대입후 +1 추가됨 결과값은 20 다음 계산에서 +1이된 21로 계산
+        result = ++num2;
+        document.write(result + "<br>");
+        //결과에 +1이 먼저 된 후 num2가 더해짐 위에서 num2가 21이 되었으므로 결과는 22
+
+    </script>
+</body>
+
+</html>

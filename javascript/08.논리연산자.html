@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 10;
+        var b = 20;
+        var m = 30;
+        var n = 40;
+        var result;
+
+        result = a > b || b >= m || m > m; // false||false||false -> ||(or) 은 한개라도 트루면 트루
+        document.write(result + "<br>");
+
+        result = a > b || b >= m || m == m;
+        document.write(result + "<br>")
+
+        result = a <= b && b >= m && m <= m; // true&&false&&false -> &&(and)는 모두 트루여야 트루
+        document.write(result + "<br>")
+
+        result = a <= b && b <= m && m <= m; // true&&false&&false -> &&(and)는 모두 트루여야 트루
+        document.write(result + "<br>")
+
+        result = !(a > b); // !는 결과값 반대로 나옴 not
+        document.write(result);
+    </script>
+</body>
+
+</html>

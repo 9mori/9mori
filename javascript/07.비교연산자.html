@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 10;
+        var b = 20;
+        var c = 30;
+        var f = "20";
+        var result
+
+        result = a > b;
+        document.write(result + "<br>"); //false
+
+        result = a < b;
+        document.write(result + "<br>"); //true
+
+        result = a <= b;
+        document.write(result + "<br>"); //true
+
+        result = a >= b;
+        document.write(result + "<br>"); //false
+
+        result = a != b;
+        document.write(result + "<br>"); //true
+
+        result = b == f; // 문자형 상관없이 숫자만 같으면 true
+        document.write(result + "<br>"); //true
+
+        result = a === b; // 문자형이고 뭐고 다 같아야 true
+        document.write(result + "<br>"); //false
+    </script>
+</body>
+
+</html>
