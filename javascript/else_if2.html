@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = Number(prompt("구매 금액은 얼마입니까", "0"));
+
+
+        if (num < 20000) {
+            document.write("주문금액 부족" + "<br>");
+        } else if (num < 50000) {
+            num = num + 2000;
+            document.write("배송비 2000원 추가" + "<br>");
+        } else {
+            document.write("무료배송" + "<br>");
+        } document.write(num);
+    </script>
+</body>
+
+</html>
