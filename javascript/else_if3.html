@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        alert("미세먼지 저감 조치에 따른 차량 2부제를 시행합니다");
+
+        var num = prompt("오늘 날짜를 입력하세요.", "0");
+
+        if (num <= 31) {
+            if ((num % 2) == 0) {
+                document.write("짝수날입니다.");
+            } else {
+                document.write("홀수날입니다.");
+            }
+        } else {
+            alert("올바른 날짜를 입력하세요");
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>

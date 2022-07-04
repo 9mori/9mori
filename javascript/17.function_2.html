@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="Body">
+    <button onclick="changeColorB();">배경색 바꾸기</button>
+    <button onclick="changeColor();">글자 배경색 바꾸기</button>
+    <button onclick="changeColorA();">글자색 바꾸기</button>
+    <p id="theBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cum veritatis repudiandae
+        facere
+        delectus non modi
+        eaque id laboriosam culpa magnam ex rem asperiores fuga et odio, nihil autem sequi.</p>
+
+    <script>
+        var color = ["white", "yellow", "aqua", "purple"]
+        var colorA = ["red", "blue", "green", "pink"]
+        var colorB = ["red", "blue", "green", "pink"]
+        // 배열 : 여러개의 데이터를 저장하는 방법
+        var i = 0;
+
+        function changeColor() {
+            i++;
+            if (i >= color.length) {
+                // length = 길이, 갯수
+                i = 0;
+                // i 의 값이 4이상이면 i에 0을 대입 -> 0번째로 돌아감.
+            }
+
+            var bodyTag = document.getElementById("theBody");
+            bodyTag.style.backgroundColor = color[i]
+            console.log(i);
+        }
+
+        function changeColorA() {
+            i++;
+            if (i >= colorA.length) {
+                // length = 길이, 갯수
+                i = 0;
+                // i 의 값이 4이상이면 i에 0을 대입 -> 0번째로 돌아감.
+            }
+
+            var bodyTag = document.getElementById("theBody");
+            bodyTag.style.color = colorA[i]
+            console.log(i);
+        }
+        function changeColorB() {
+            i++;
+            if (i >= colorB.length) {
+                // length = 길이, 갯수
+                i = 0;
+                // i 의 값이 4이상이면 i에 0을 대입 -> 0번째로 돌아감.
+            }
+
+            var bodyTag = document.getElementById("Body");
+            bodyTag.style.backgroundColor = colorB[i]
+            console.log(i);
+        }
+
+
+    </script>
+</body>
+
+</html>
