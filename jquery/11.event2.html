@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #000;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="m1">
+        <button>show</button>
+        <button>hide</button>
+        <button>toggle</button>
+        <div class="box">내용1</div>
+    </div>
+    <div id="m2">
+        <button>slideDown</button>
+        <button>sldieUp</button>
+        <button>sliderToggle</button>
+        <div class="box">내용2</div>
+    </div>
+    <div id="m3">
+        <button>fadeIn</button>
+        <button>fadeOut</button>
+        <button>fadeToggle</button>
+        <div class="box">내용3</div>
+    </div>
+    <script>
+        $(function () {
+            $("#m1 button:eq(0)").click(function () {
+                $("#m1 .box").show();
+            });
+            $("#m1 button:eq(1)").click(function () {
+                $("#m1 .box").hide();
+            });
+            $("#m1 button:eq(2)").click(function () {
+                $("#m1 .box").toggle("slow", "swing");
+            });
+        });
+
+            // $("#m2 button:eq(0)").click(function () {
+            //     $("#m2 .box").slideDown();
+            // });
+            // $("#m2 button:eq(1)").click(function () {
+            //     $("#m2 .box").slideUp();
+            // });
+            // $("#m2 button:eq(2)").click(function () {
+            //     $("#m2 .box").slideToggle();
+            // });
+
+
+            // $("#m3 button:eq(0)").click(function () {
+            //     $("#m3 .box").fadeIn(function () {
+            //         $(this).text("jquery");
+            //     });
+            // });
+            // $("#m3 button:eq(1)").click(function () {
+            //     $("#m3 .box").fadeOut(function () {
+            //         $(this).text("내용3");
+            //     });
+            //     $("#m3 button:eq(2)").click(function () {
+            //         $("#m3 .box").fadeToggle(function () {
+            //             if ($(this).css("display") == "none") {
+            //                 $(this).text("내용3")
+            //             } else {
+            //                 $(this).text("jquery");
+            //             }
+            //         });
+            //     });
+            // });
+    </script>
+</body>
+
+</html>
